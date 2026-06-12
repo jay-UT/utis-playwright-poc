@@ -1,0 +1,21 @@
+{
+  "name": "ifs-playwright-poc",
+  "version": "1.0.0",
+  "description": "IFS Playwright POC",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:login": "playwright test tests/login/",
+    "test:homepage": "playwright test tests/homepage/",
+    "report": "playwright show-report",
+    "report:monocart": "start monocart-report/index.html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.19.43",
+    "dotenv": "^16.6.1",
+    "monocart-reporter": "^2.11.2",
+    "typescript": "^5.9.3"
+  }
+}

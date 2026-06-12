@@ -1,12 +1,12 @@
 import { test, expect } from '../../fixtures/customFixtures';
 import { testData } from '../../test-data/testData';
 
-test.describe('Login', () => {
+test.describe('Customer Details', () => {
   test.beforeEach(async ({ loginPage }) => {
     await loginPage.setup();
   });
 
-  test('IFS Customer account details extraction', async ({ loginPage, page, homePage }) => {
+  test('IFS Customer account details extraction @IFS @demo @smoke @regression', async ({ loginPage, page, homePage }) => {
     await test.step('Navigate to IFS Cloud', async () => {
       await loginPage.ifsCloud();
     });

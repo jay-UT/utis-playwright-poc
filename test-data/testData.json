@@ -1,0 +1,16 @@
+{
+  "_comment": ">>> ADD YOUR CLIENT TEST DATA HERE <<<",
+  "users": {
+    "validUser": {
+      "username": "",
+      "password": ""
+    },
+    "lockedUser": {
+      "username": "",
+      "password": ""
+    }
+  },
+  "products": {
+    "searchTerm": ""
+  }
+}

@@ -6,7 +6,7 @@ test.describe('Login', () => {
     await loginPage.setup();
   });
 
-  test('IFS account details extraction', async ({ loginPage, page, homePage }) => {
+  test('IFS Customer account details extraction', async ({ loginPage, page, homePage }) => {
     await test.step('Navigate to IFS Cloud', async () => {
       await loginPage.ifsCloud();
     });

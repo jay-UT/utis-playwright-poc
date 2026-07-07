@@ -4,3 +4,4 @@ playwright-report/
 monocart-report/
 test-results/
 dist/
+.chrome-profile/

@@ -4,7 +4,7 @@ import { waitForElement } from '../utils/waitHelpers';
 
 export class HomePage extends BasePage {
   private readonly navigationMenuSearchBar = this.page.locator('//input[@id="searchInputInsideNavigationMenu"]');
-  private readonly searchValue = this.page.locator('//span[text()="Customers"]');
+  private readonly searchValue = this.page.getByRole('link', { name: 'Customers' }).first();
   private readonly customerSearchButton = this.page.locator('//granite-chip[@data-fnd="pageSearchButton"]');
  private  readonly nameFilter = this.page.locator('//div[@title="Name"]');
  private readonly nameFilterSearchPane = this.page.locator('//input[@data-fnd="search-pane-input"]');

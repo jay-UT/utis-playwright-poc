@@ -9,13 +9,20 @@
     "test:login": "playwright test tests/login/",
     "test:homepage": "playwright test tests/homepage/",
     "report": "playwright show-report",
-    "report:monocart": "start monocart-report/index.html"
+    "report:monocart": "start monocart-report/index.html",
+    "test:profile": "cross-env USE_CHROME_PROFILE=true playwright test --workers=1",
+    "test:noprofile": "cross-env USE_CHROME_PROFILE=false playwright test",
+    "test:profile:smoke": "cross-env USE_CHROME_PROFILE=true playwright test --workers=1 --grep @smoke",
+    "test:profile:regression": "cross-env USE_CHROME_PROFILE=true playwright test --workers=1 --grep @regression",
+    "profile:reset": "rimraf .chrome-profile"
   },
   "devDependencies": {
     "@playwright/test": "^1.44.0",
     "@types/node": "^20.19.43",
+    "cross-env": "^10.1.0",
     "dotenv": "^16.6.1",
     "monocart-reporter": "^2.11.2",
+    "rimraf": "^6.1.3",
     "typescript": "^5.9.3"
   }
 }
